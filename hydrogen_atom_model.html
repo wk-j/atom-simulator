@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hydrogen Atom Model - 3D Visualization</title>
+    <style>
+        body { margin: 0; background-color: #000; color: #fff; }
+        canvas { display: block; }
+        #info {
+            position: absolute;
+            top: 10px;
+            width: 100%;
+            text-align: center;
+            z-index: 100;
+            display:block;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+        }
+        a { color: #8af; }
+    </style>
+</head>
+<body>
+    <div id="info">
+        Hydrogen Atom Visualization<br/>
+        (Electron Cloud Representation - s, p, d orbitals)<br/>
+        <a href="index.html">Back to Models</a>
+    </div>
+    <script async src="https://unpkg.com/es-module-shims@1.6.3/dist/es-module-shims.js"></script>
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.157.0/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.157.0/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="js/hydrogen_atom_visualization.js"></script>
+</body>
+</html>
